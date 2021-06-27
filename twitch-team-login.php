@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       Twitch Team Login
  * Plugin URI:        https://github.com/annedorko/twitch-team-login
- * Description:       Allow members of a Twitch team to login to a WordPress website.
+ * Description:       Allow members of a Twitch team to log in to a WordPress website. This is an unofficial plugin and not affiliated with Twitch.
  * Version:           1.0.0
  * Author:            Anne Dorko
  * Author URI:        https://dorko.dev/

@@ -54,6 +54,22 @@ class Twitch_Team_Login_Admin {
 
 	}
 
+	public function register_admin_pages() {
+		add_menu_page(
+			'Twitch Team Management',
+			'Team Members',
+			'edit_users',
+			'twitch-team-login',
+			array( $this, 'display_admin_page' ),
+			$icon_url = 'dashicons-groups',
+			$position = 2 );
+	}
+
+	public function display_admin_page() {
+		$testing = "Testing!";
+		include('partials/twitch-team-login-admin-display.php');
+	}
+
 	/**
 	 * Register the stylesheets for the admin area.
 	 *

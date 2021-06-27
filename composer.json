@@ -1,6 +1,6 @@
 {
 	"name": "annedorko/twitch-team-login",
-    "version": "0.0.1",
+    "version": "1.0.0",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
 	"description": "Allow members of a Twitch team to login to a WordPress website.",

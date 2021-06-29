@@ -57,7 +57,7 @@ class Twitch_Team_Login_Admin {
 	public function register_admin_pages() {
 		add_menu_page(
 			'Twitch Team Management',
-			'Team Members',
+			'Team',
 			'edit_users',
 			'twitch-team-login',
 			array( $this, 'display_admin_page' ),
@@ -66,8 +66,17 @@ class Twitch_Team_Login_Admin {
 	}
 
 	public function display_admin_page() {
-		$testing = "Testing!";
+		// https://dev.twitch.tv/docs/v5/reference/channels#get-channel-teams
 		include('partials/twitch-team-login-admin-display.php');
+	}
+
+
+	public function twitch_login_webhook() {
+		global $wp;
+		if ( 'twitch/auth' === $wp->request ) {
+			var_dump(get_query_var("params"));
+			die();
+		}
 	}
 
 	/**

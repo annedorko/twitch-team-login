@@ -74,8 +74,6 @@ class Twitch_Team_Login_Admin {
 	public function twitch_login_webhook() {
 		global $wp;
 		if ( 'twitch/auth' === $wp->request ) {
-			var_dump(get_query_var("params"));
-			die();
 		}
 	}
 

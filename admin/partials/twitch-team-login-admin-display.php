@@ -17,7 +17,8 @@
     <h1>Twitch Team Settings</h1>
 
     <form class="" action="options.php" method="post">
-        <h2 class="title">Developer App Settings</h2>
+        <h2 class="title">Twitch App Settings</h2>
+        <p>You must register your WordPress site as a <a href="https://dev.twitch.tv/console/apps" target="_blank">Twitch app</a> in order to connect with the Twitch API.</p>
         <table class="form-table" role="presentation">
             <tbody>
                 <tr>
@@ -30,20 +31,26 @@
                     <th scope="row">Twitch Client ID</th>
                     <td>
                         <input type="password" name="" value="" class="regular-text">
-                        <p class="description">You can find or create your <a href="https://dev.twitch.tv/console/apps" target="_blank">Twitch Client ID here</a>.</p>
+                        <p class="description">Find or create your <a href="https://dev.twitch.tv/console/apps" target="_blank">Twitch Client ID here</a>.</p>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row">Twitch Client Secret</th>
                     <td>
                         <input type="password" name="" value="" class="regular-text">
-                        <p class="description">You can find or create your <a href="https://dev.twitch.tv/console/apps" target="_blank">Twitch Client Secret here</a>.</p>
+                        <p class="description">Find or create your <a href="https://dev.twitch.tv/console/apps" target="_blank">Twitch Client Secret here</a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Authenticate App</th>
+                    <td>
+                        <input type="button" name="connect" value="Authenticate Twitch App" class="button" disable />
                     </td>
                 </tr>
             </tbody>
         </table>
         <h2>Twitch Team Settings</h2>
-        <p><em>You will be able to connect this website to a Twitch team after authenticating your WordPress account with Twitch.</em></p>
+        <p>You will be able to connect this website to a Twitch team after authenticating your WordPress account with Twitch.</p>
         <table class="form-table" role="presentation">
             <tbody>
                 <tr>
@@ -60,6 +67,20 @@
                             <option value="">Twitch Team 2</option>
                             <option value="">Twitch Team 3</option>
                         </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Permissions</th>
+                    <td>
+                        <fieldset>
+                            <label>
+                                <input type="checkbox" name="" value=""> Restrict new site registrations to team members
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="" value=""> Restrict logins to current members
+                            </label>
+                        </fieldset>
                     </td>
                 </tr>
             </tbody>
